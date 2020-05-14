@@ -9,7 +9,9 @@
 * Creare cartella /logs
 
 #### Comandi
-* Avviare i container: **make start**
+* Avviare i container: **make start (opzionale: opt=<options>)**
 * Terminare i container: **make stop**
 * Aggiornare dipendenze (composer): **make install**
+* Installare un pacchetto (composer) : **make require pkg=<pacchetto_da_installare>**
+* Debug Router (composer): **make routes**
 

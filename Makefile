@@ -1,6 +1,6 @@
 start:
 	$(info Make: Starting container...)
-	@docker-compose up $(options)
+	@docker-compose up $(opt)
 
 stop:
 	$(info Make: Stopping container...)
@@ -9,3 +9,11 @@ stop:
 install:
 	$(info Make: Composer install...)
 	@docker-compose run webserver composer install
+
+require:
+	$(info Make: Composer require...)
+	@docker-compose run webserver composer require $(pkg)
+
+routes:
+	$(info Make: Debug Router...)
+	@docker-compose run webserver bin/console debug:router

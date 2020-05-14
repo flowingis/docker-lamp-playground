@@ -11,3 +11,5 @@
 #### Comandi
 * Avviare i container: **make start**
 * Terminare i container: **make stop**
+* Aggiornare dipendenze (composer): **make install**
+

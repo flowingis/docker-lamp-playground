@@ -88,3 +88,10 @@ modules.xml
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/phpstorm+all
+
+# CUSTOM
+.env
+config/
+data/
+logs/
+# End of CUSTOM

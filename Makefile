@@ -21,3 +21,19 @@ routes:
 test:
 	$(info Make: Execute Test...)
 	@docker-compose run webserver bin/phpunit
+
+entity:
+	$(info Make: Create New Entity...)
+	@docker-compose run webserver bin/console make:entity
+
+migration:
+	$(info Make: Create Migration...)
+	@docker-compose run webserver bin/console make:migration
+
+migrate:
+	$(info Make: Create Migration...)
+	@docker-compose run webserver bin/console doctrine:migrations:migrate
+
+fixtures:
+	$(info Make: Load Fixtures...)
+	@docker-compose run webserver bin/console doctrine:fixtures:load

@@ -117,6 +117,9 @@
     "php": {
         "version": "7.4"
     },
+    "predis/predis": {
+        "version": "2.0-dev"
+    },
     "psr/cache": {
         "version": "1.0.x-dev"
     },

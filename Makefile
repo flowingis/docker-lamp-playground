@@ -37,3 +37,9 @@ migrate:
 fixtures:
 	$(info Make: Load Fixtures...)
 	@docker-compose run webserver bin/console doctrine:fixtures:load
+
+setup: install migrate
+
+setupdev: setup fixtures
+
+

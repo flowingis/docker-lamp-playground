@@ -7,7 +7,7 @@
 * Creare cartella /config (duplicare da config.sample)
 * Creare cartella /data
 * Creare cartella /logs
-* TODO: make setup
+* Eseguire il comando: **make setupdev**
 
 #### API Test
 * Ping: http://localhost/api/ping
@@ -17,6 +17,7 @@
 * phpMyAdmin: http://localhost:8080
 
 #### Comandi di utilità
+* Setup: **make setup**
 * Avviare i container: **make start (opzionale: opt=<options>)**
 * Terminare i container: **make stop**
 * Aggiornare dipendenze (composer): **make install**
@@ -26,6 +27,7 @@
 * Esegue migration (Doctrine): **make migrate**
 
 #### Comandi specifici per lo sviluppo
+* Setup: **make setupdev**
 * Creazione/Modifica entità (Doctrine): **make entity**
 * Creazione migration (Doctrine): **make migration**
 * Popolamento iniziale db (Doctrine Fixtures): **make fixtures**

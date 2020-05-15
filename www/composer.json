@@ -9,6 +9,7 @@
     "ext-ctype": "*",
     "ext-iconv": "*",
     "fzaninotto/faker": "^1.9@dev",
+    "predis/predis": "^2.0@dev",
     "sensio/framework-extra-bundle": "^5.5@dev",
     "symfony/apache-pack": "dev-master",
     "symfony/console": "*",

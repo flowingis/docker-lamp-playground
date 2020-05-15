@@ -14,4 +14,5 @@
 * Aggiornare dipendenze (composer): **make install**
 * Installare un pacchetto (composer) : **make require pkg=<pacchetto_da_installare>**
 * Debug Router (composer): **make routes**
+* Esegue tutti i test (phpunit): **make test**
 

@@ -11,7 +11,9 @@
 
 #### API Test
 * Ping: http://localhost/api/ping
-* Elenco soggetti (lettura da db): http://localhost/api/soggetti 
+* Elenco soggetti (lettura da db): http://localhost/api/soggetti
+* Lettura valore di esempio dalla cache (Redis): http://localhost/cache/getsample
+* Scrittura valore di esempio dalla cache (Redis): http://localhost/cache/putsample
 
 #### Tool
 * phpMyAdmin: http://localhost:8080
@@ -31,4 +33,3 @@
 * Creazione/Modifica entità (Doctrine): **make entity**
 * Creazione migration (Doctrine): **make migration**
 * Popolamento iniziale db (Doctrine Fixtures): **make fixtures**
-

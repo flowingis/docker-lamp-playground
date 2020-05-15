@@ -16,7 +16,9 @@
     "symfony/framework-bundle": "*",
     "symfony/yaml": "*"
   },
-  "require-dev": {},
+  "require-dev": {
+    "symfony/test-pack": "dev-master"
+  },
   "config": {
     "optimize-autoloader": true,
     "preferred-install": {

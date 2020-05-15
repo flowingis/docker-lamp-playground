@@ -17,3 +17,7 @@ require:
 routes:
 	$(info Make: Debug Router...)
 	@docker-compose run webserver bin/console debug:router
+
+test:
+	$(info Make: Execute Test...)
+	@docker-compose run webserver bin/phpunit

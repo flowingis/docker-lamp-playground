@@ -3,13 +3,9 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-<<<<<<< HEAD
     <h3>Messaggi</h3>
     <br>
     <div id="messaggi"></div>
-=======
-    <h3>Home Page</h3>
->>>>>>> 2e401ef5e1a5e300eb11470a77d9c44edbc87be4
 {% endblock %}
 
 {% block javascripts %}
@@ -24,21 +20,16 @@
                     return;
                 }
 
-                console.log("connected to artemis!");
-
                 var subscribeCallback = function(message) {
                     if (message.body) {
-<<<<<<< HEAD
                         document.getElementById("messaggi").innerHTML += message.body + '<br>';
-=======
-                        console.log("message received: " + message.body);
->>>>>>> 2e401ef5e1a5e300eb11470a77d9c44edbc87be4
                     } else {
                         console.log("Error: Empty message received");
                     }
                 };
                 client.subscribe("/queue/test", subscribeCallback);
             };
+
             client.connect("admin", "admin", connectCallback);
         })();
     </script>

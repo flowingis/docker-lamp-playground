@@ -56,3 +56,21 @@ services:
     image: redis:latest
     ports:
       - "127.0.0.1:${HOST_MACHINE_REDIS_PORT}:6379"
+  artemis:
+    image: vromero/activemq-artemis:2.6.4-alpine
+    environment:
+<<<<<<< HEAD
+      - ARTEMIS_USERNAME=${ARTEMIS_USERNAME}
+      - ARTEMIS_PASSWORD=${ARTEMIS_PASSWORD}
+=======
+      - ARTEMIS_USERNAME=admin
+      - ARTEMIS_PASSWORD=admin
+>>>>>>> 2e401ef5e1a5e300eb11470a77d9c44edbc87be4
+      - ARTEMIS_MIN_MEMORY=1024M
+      - ARTEMIS_MAX_MEMORY=1024M
+    ports:
+      - "8161:8161"
+      - "61613:61613"
+      - "61616:61616"
+    volumes:
+      - ./data/artemis:/var/lib/artemis/data

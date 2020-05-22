@@ -144,6 +144,12 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "stomp-php/stomp-php": {
+        "version": "dev-master"
+    },
+    "symfony/amqp-messenger": {
+        "version": "5.1.x-dev"
+    },
     "symfony/apache-pack": {
         "version": "1.0",
         "recipe": {
@@ -188,6 +194,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "5.1-dev"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "5.1.x-dev"
     },
     "symfony/dom-crawler": {
         "version": "5.1-dev"
@@ -259,6 +268,18 @@
             "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
         }
     },
+    "symfony/messenger": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "8a2675c061737658bed85102e9241c752620e575"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/orm-pack": {
         "version": "dev-master"
     },
@@ -298,6 +319,9 @@
     "symfony/property-info": {
         "version": "5.1-dev"
     },
+    "symfony/redis-messenger": {
+        "version": "5.1.x-dev"
+    },
     "symfony/routing": {
         "version": "5.1",
         "recipe": {
@@ -327,6 +351,26 @@
     "symfony/test-pack": {
         "version": "dev-master"
     },
+    "symfony/translation-contracts": {
+        "version": "2.1-dev"
+    },
+    "symfony/twig-bridge": {
+        "version": "5.1.x-dev"
+    },
+    "symfony/twig-bundle": {
+        "version": "5.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.0",
+            "ref": "fab9149bbaa4d5eca054ed93f9e1b66cc500895d"
+        },
+        "files": [
+            "config/packages/test/twig.yaml",
+            "config/packages/twig.yaml",
+            "templates/base.html.twig"
+        ]
+    },
     "symfony/var-dumper": {
         "version": "5.1-dev"
     },
@@ -335,6 +379,9 @@
     },
     "symfony/yaml": {
         "version": "5.1-dev"
+    },
+    "twig/twig": {
+        "version": "3.x-dev"
     },
     "webimpress/safe-writer": {
         "version": "2.1.x-dev"

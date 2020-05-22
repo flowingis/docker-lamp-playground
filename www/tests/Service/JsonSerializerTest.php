@@ -5,7 +5,7 @@ use App\Entity\Soggetto;
 use App\Service\JsonSerializer;
 use PHPUnit\Framework\TestCase;
 
-class JsonSerializerTestTest extends TestCase
+class JsonSerializerTest extends TestCase
 {
     private JsonSerializer $jsonSerializer;
 
